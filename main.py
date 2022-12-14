@@ -36,12 +36,25 @@ name = input("Ho va ten: ") # Ask user for their name
 chiso1 = int(input("Nhap chi so thang truoc: ")) # Ask user for last month counter
 chiso2 = int(input("Nhap chi so thang sau: ")) # Current one
 diff = chiso2 - chiso1 # Calculate this month usage
-print("Ho va ten: " + name)
-if diff <= 60:
+print("Ho va ten: " + name) # Print out the name again, which is a reuquirement
+if diff <= 60: # If used less than 60kWh
 	print("Tien phai tra la: " + str(diff * 5))
-elif diff > 60 and diff <= 160:
+elif diff > 60 and diff <= 160: # If used more than 60 but less than 160
 	print("Tien phai tra la: " + str((diff - 60) * 8 + 60 * 5))
-elif diff >= 160:
+elif diff >= 160: # If used more than 160
   print("Tien phai tra la: " + str((diff - 160) * 10 + 60 * 5 + 100 * 8))
-else:
+else: # If none of that is True
   print("Undefined Error")
+
+# Exercise 4: Calculate (-) point
+# Part 1: Ask for the rules
+a = int(input("So diem bi tru trong mot truong hop khong deo the hoc sinh: "))
+b = int(input("So diem bi tru trong mot truong hop noi truyen trong lop: "))
+c = int(input("So diem bi tru trong mot truong hop di hoc muon: "))
+t = int(input("So truong hop khong deo the duoc ghi nhan: "))
+n = int(input("So truong hop noi truyen trong lop duoc ghi nhan: "))
+m = int(input("So truong hop di hoc muon duoc ghi nhan: "))
+
+# Part 2: Calculate the total (-) score
+total = a * t + b * n + c * m
+print(total) # Print out the total
