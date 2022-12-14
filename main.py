@@ -3,9 +3,9 @@
 # Please ONLY use this program and its code as example only and not in production project
 # Comments will be include at every single line to get you to know more about Python, be sure to read it to understand what is going on
 
-# The code will be seperated into sections, each of it corresponds to one exercise of the test. Make sure you read the correct exercise you are working on
+# The code will be separated into sections, each of it corresponds to one exercise of the test. Make sure you read the correct exercise you are working on
 
-# Exercise 1: Insert 3 scores from 0 to 10 and calculate the average round it to the nearest ten-thousanth, checks whether the user passes the test or not.
+# Exercise 1: Insert 3 scores from 0 to 10 and calculate the average round it to the nearest ten-thousandth, checks whether the user passes the test or not.
 
 # Part 1: Ask user for their score
 score1 = float(input("Enter your first score: ")) # Prompt user to enter their first score, then save it as score1
@@ -29,14 +29,14 @@ else: # Other weird cases
 # Exercise 2: Double number
 # Basically ask for a number, and then print out its double counterpart
 num = int(input("Nhap gia tri n: ")) # Ask user for input of a number, save it as num
-print("So gap doi: " + num * 2) # Multiply it up and print it out
+print("So gap doi: " + str(num * 2)) # Multiply it up and print it out
 
 # Exercise 3: Calculate electricity bill
 name = input("Ho va ten: ") # Ask user for their name
 chiso1 = int(input("Nhap chi so thang truoc: ")) # Ask user for last month counter
 chiso2 = int(input("Nhap chi so thang sau: ")) # Current one
 diff = chiso2 - chiso1 # Calculate this month usage
-print("Ho va ten: " + name) # Print out the name again, which is a reuquirement
+print("Ho va ten: " + name) # Print out the name again, which is a requirement
 if diff <= 60: # If used less than 60kWh
 	print("Tien phai tra la: " + str(diff * 5))
 elif diff > 60 and diff <= 160: # If used more than 60 but less than 160
